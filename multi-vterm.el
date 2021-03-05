@@ -77,7 +77,7 @@ If nil, this defaults to the SHELL environment variable."
     (setq multi-vterm-buffer-list (nconc multi-vterm-buffer-list (list vterm-buffer)))
     (set-buffer vterm-buffer)
     (multi-vterm-internal)
-    (switch-to-buffer vterm-buffer)))
+    (display-buffer vterm-buffer)))
 
 ;;;###autoload
 (defun multi-vterm-project ()
